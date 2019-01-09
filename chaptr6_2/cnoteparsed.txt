@@ -1,0 +1,25 @@
+
+* Steps involved in compilation
+ --> preprocessing:  '#' indicates the compiler to include the prototypes of the certain function ;to include them first before going any further.
+ --> assembly code: source code converted into assembly language which the cpu understands.
+ --> linking : links all the code for builtin functions like printf into the code which we have written.
+
+* Some tips
+ --> make sure your code is readable like using  indentation
+ --> whenever codes get big use comments to keep track of what's happening
+ --> you can use printf for degugging
+
+* STRINGS 
+ --> string size = string lenght + 1
+ --> each character is stored as integer(corresponding ascii value)
+ --> if you want to convert to captial letter simply subtract 32 from the character(because a - 97 and A - 65 and 97 - 65 = 32) or simply character - ('a' - 'A')
+ --> in order to convert into lower, add  32 or simply character +('a'-'A')
+
+* A bit on selection sort
+ --> selection sort invovles n-1 + (n-2)+ ... +1 = (n^2-n)/2 computer scientist say o(n^2) refer lecture2.
+
+* Malloc
+ --> whenever we use malloc(),if the main  function returns 0 ,then dynamically allocated memory get freedup.But it is always a good idea to use free(pointer name); to free the dynamicaly allocated memory.If not free malloc, it may cause memory leak.Malloc gives up contigious memory.Since it is contigious ,we can treat the allocated memeory as an array.
+
+* Reference
+ --> refer video :https://www.youtube.com/watch?v=xa4ugmMDhiE
